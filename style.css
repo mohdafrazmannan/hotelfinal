@@ -466,29 +466,31 @@ h4,
     width: 100%;
   }
 
-  .main-dish {
-    width: 250px;
-    height: 250px;
-  }
-  .floating-dish {
-    width: 100px;
-    height: 100px;
-  }
-  .dish-1 {
-    top: -5%;
-    left: -5%;
-  }
-  .dish-2 {
-    bottom: -5%;
-    right: -5%;
-  }
-  .dish-3 {
-    left: 70%;
-    top: 50%;
-  }
   .hero-images {
+    width: 280px;
     height: 280px;
     margin-top: 1rem;
+  }
+  .main-dish {
+    width: 220px;
+    height: 220px;
+  }
+  .floating-dish {
+    width: 90px;
+    height: 90px;
+  }
+  .dish-1 {
+    top: -10px;
+    left: -10px;
+  }
+  .dish-2 {
+    bottom: -10px;
+    right: -10px;
+  }
+  .dish-3 {
+    left: auto;
+    right: -25px;
+    top: 40%;
   }
 
   .menu-grid {
@@ -510,27 +512,29 @@ h4,
     font-size: 1.8rem;
   }
   
-  .main-dish {
-    width: 200px;
-    height: 200px;
-  }
-  .floating-dish {
-    width: 80px;
-    height: 80px;
-  }
   .hero-images {
+    width: 220px;
     height: 220px;
   }
+  .main-dish {
+    width: 180px;
+    height: 180px;
+  }
+  .floating-dish {
+    width: 75px;
+    height: 75px;
+  }
   .dish-1 {
-    top: -10%;
-    left: -5%;
+    top: -10px;
+    left: -10px;
   }
   .dish-2 {
-    bottom: -10%;
-    right: -5%;
+    bottom: -10px;
+    right: -10px;
   }
   .dish-3 {
-    left: 75%;
+    left: auto;
+    right: -20px;
     top: 40%;
   }
 }
