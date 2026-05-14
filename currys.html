@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rich & Creamy Currys - Hyderabadi Dum Biryani</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <style>
+    .menu-page-header {
+      text-align: center;
+      padding: 8rem 5% 2rem;
+    }
+
+    .menu-page-header h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .menu-page-header p {
+      font-size: 1.1rem;
+      color: var(--text-color);
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .navbar-fixed {
+      background: rgba(255, 255, 255, 0.9);
+      backdrop-filter: blur(10px);
+      position: fixed;
+      top: 0;
+      z-index: 100;
+      box-shadow: var(--card-shadow);
+    }
+
+    @media (max-width: 768px) {
+      .menu-page-header {
+        padding: 6rem 5% 1rem;
+      }
+      .menu-page-header h1 {
+        font-size: 2rem;
+      }
+      .menu-page-header p {
+        font-size: 0.95rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-fixed">
+    <div class="nav-left">
+      <i class='bx bx-map'></i>
+      <span>Hyderabad, India</span>
+    </div>
+    <div class="nav-center">
+      <div class="brand-logo">TH</div>
+      <h1>Hyderabadi Dum Biryani</h1>
+    </div>
+    <div class="nav-right">
+      <button class="nav-pill-btn order-online-btn" onclick="window.location.href='index.html'">Home</button>
+      <button class="icon-btn"><i class='bx bx-menu'></i></button>
+    </div>
+  </nav>
+
+  <main>
+    <div class="menu-page-header">
+      <h1>Rich & Creamy Currys</h1>
+      <p>Indulge in our signature gravies and currys, slow-cooked to perfection in aromatic spices and velvety sauces.
+      </p>
+    </div>
+
+    <section class="menu-section" style="padding-top: 2rem;">
+      <div class="menu-grid" style="grid-template-columns: repeat(4, 1fr);">
+        <div class="menu-card floating-card">
+          <div class="card-img-wrapper">
+            <img src="assets/butter_chicken_topdown.png" alt="Butter Chicken">
+          </div>
+          <h3>Butter Chicken</h3>
+          <p>Succulent pieces of tandoori chicken simmered in a velvety, rich, and creamy tomato gravy with a hint of
+            fenugreek.</p>
+          <div class="card-footer">
+            <span class="price">₹180</span>
+            <button class="description-btn"><i class='bx bx-info-circle'></i> Description</button>
+          </div>
+        </div>
+
+        <div class="menu-card floating-card" style="animation-delay: 0.5s">
+          <div class="card-img-wrapper">
+            <img src="assets/palak_paneer_topdown.png" alt="Palak paneer">
+          </div>
+          <h3>Palak paneer</h3>
+          <p>Soft cottage cheese cubes enveloped in a rich, buttery, and mildly sweet tomato gravy.</p>
+          <div class="card-footer">
+            <span class="price">₹150</span>
+            <button class="description-btn"><i class='bx bx-info-circle'></i> Description</button>
+          </div>
+        </div>
+
+        <div class="menu-card floating-card" style="animation-delay: 1s">
+          <div class="card-img-wrapper">
+            <img src="assets/chicken_tikka_topdown.png" alt="Chicken Tikka Masala">
+          </div>
+          <h3>Chicken Tikka Masala</h3>
+          <p>Roasted chunks of chicken tikka tossed in a spicy, flavorful, and robust onion-tomato masala base.</p>
+          <div class="card-footer">
+            <span class="price">₹220</span>
+            <button class="description-btn"><i class='bx bx-info-circle'></i> Description</button>
+          </div>
+        </div>
+
+        <div class="menu-card floating-card" style="animation-delay: 1.5s">
+          <div class="card-img-wrapper">
+            <img src="assets/andhra_chicken_topdown.png" alt="Andhra Chicken Curry">
+          </div>
+          <h3>Andhra Chicken Curry</h3>
+          <p>A fiery traditional South Indian curry made with an intense blend of local spices, curry leaves, and green
+            chilies.</p>
+          <div class="card-footer">
+            <span class="price">₹190</span>
+            <button class="description-btn"><i class='bx bx-info-circle'></i> Description</button>
+          </div>
+        </div>
+      </div>
+      <p style="text-align: center; font-size: 0.85rem; color: #777; margin-top: 3rem; padding-bottom: 1rem; font-style: italic;">* Prices shown could be for single plates, while full portions may cost differently.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section brand-section">
+        <div class="footer-logo">
+          <i class='bx bx-restaurant'></i>
+          <h2>Hyderabadi Dum Biryani</h2>
+        </div>
+        <p>Experience the authentic taste of royal delicacies, crafted with passion and served with love.</p>
+        <div class="social-links">
+          <a href="#"><i class='bx bxl-facebook'></i></a>
+          <a href="#"><i class='bx bxl-instagram'></i></a>
+          <a href="#"><i class='bx bxl-twitter'></i></a>
+        </div>
+      </div>
+      <div class="footer-section">
+        <h3>Contact Us</h3>
+        <ul>
+          <li><i class='bx bx-map'></i>3-2-2,opp police station,kachiguda, Hyderabad</li>
+          <li><i class='bx bx-phone'></i> +91 62818 72993</li>
+          <li><i class='bx bx-envelope'></i>dumbirianihyderabad@gmail.com
+          </li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="menu.html">Our Menu</a></li>
+          <li><a href="index.html#about">About Us</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Hyderabadi Dum Biryani. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

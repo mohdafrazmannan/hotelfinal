@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hyderabadi Dum Biryani</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="nav-left">
+      <a href="https://www.google.com/maps/place/Triveni+Hotel/@17.3891652,78.4968364,20z/data=!4m9!1m2!2m1!1shyderabadi+dum+biryani+hotel!3m5!1s0x3bcb99c9e9e6b159:0x6903d07ece1bf701!8m2!3d17.3891652!4d78.4968364!16s%2Fg%2F1tj44c68?entry=ttu&g_ep=EgoyMDI2MDQyOS4wIKXMDSoASAFQAw%3D%3D"
+        target="_blank" title="Open our location in Google Maps" class="nav-pill-btn location-btn">
+        <i class='bx bx-map'></i>
+        <span>Our Location</span>
+      </a>
+    </div>
+    <div class="nav-center">
+      <div class="brand-logo">TH</div>
+      <h1>Hyderabadi Dum Biryani</h1>
+    </div>
+    <div class="nav-right">
+      <button class="nav-pill-btn" onclick="window.location.href='menu.html'">Menu</button>
+      <button class="nav-pill-btn order-online-btn"
+        onclick="window.location.href='https://www.zomato.com/hyderabad/hyderabad-dum-biryani-kacheguda'">Order
+        Online</button>
+      <button class="icon-btn"><i class='bx bx-menu'></i></button>
+    </div>
+  </nav>
+
+  <main class="hero">
+    <div class="hero-content">
+      <h1 class="hero-title">What would you like to eat today?</h1>
+      <div class="hero-buttons">
+        <button class="btn btn-primary"
+          onclick="window.location.href='https://www.zomato.com/hyderabad/hyderabad-dum-biryani-kacheguda'">Order
+          Now</button>
+        <button class="btn btn-secondary" onclick="window.location.href='menu.html'">See Full Menu</button>
+      </div>
+    </div>
+
+    <div class="hero-images">
+      <img src="assets/biryani_main.png" alt="Hyderabadi Dum Biryani" class="main-dish">
+
+      <img src="assets/kababs_dish.png" alt="Kababs" class="floating-dish dish-1">
+      <img src="assets/fried_rice_dish.png" alt="Fried Rice" class="floating-dish dish-2">
+      <img src="assets/butter_chicken_dish.png" alt="Butter Chicken" class="floating-dish dish-3">
+    </div>
+  </main>
+
+  <section class="menu-section">
+    <div class="menu-grid">
+      <div class="menu-card floating-card" onclick="window.location.href='biryanis.html'" style="cursor: pointer;"
+        title="View all Biryani options">
+        <div class="card-img-wrapper">
+          <img src="assets/biryani_main.png" alt="Hyderabadi Dum Biryani">
+        </div>
+        <h3>Hyderabadi Dum Biryani</h3>
+        <p>Experience the royal flavors of authentic Hyderabadi Dum Biryani, layered with fragrant basmati rice, tender
+          marinated meat, and a secret blend of exotic spices, slow-cooked to perfection over dum.</p>
+        <div class="card-footer">
+          <span class="price">₹100-160</span>
+          <button class="description-btn" onclick="event.stopPropagation();"><i class='bx bx-info-circle'></i>
+            Description</button>
+        </div>
+      </div>
+
+      <div class="menu-card floating-card" style="animation-delay: 1s; cursor: pointer;"
+        onclick="window.location.href='kababs.html'" title="View all Kababs">
+        <div class="card-img-wrapper">
+          <img src="assets/kababs_dish.png" alt="Kababs">
+        </div>
+        <h3>Kababs</h3>
+        <p>Savor our juicy, charcoal-grilled Seekh Kababs, crafted from finely minced meat infused with aromatic herbs,
+          served sizzling hot with a refreshing mint chutney.</p>
+        <div class="card-footer">
+          <span class="price">₹130-190</span>
+          <button class="description-btn" onclick="event.stopPropagation();"><i class='bx bx-info-circle'></i>
+            Description</button>
+        </div>
+      </div>
+
+      <div class="menu-card floating-card" style="animation-delay: 2s; cursor: pointer;"
+        onclick="window.location.href='fried_rice.html'" title="View all Fried Rice">
+        <div class="card-img-wrapper">
+          <img src="assets/fried_rice_dish.png" alt="Fried Rice">
+        </div>
+        <h3>Fried Rice</h3>
+        <p>Delight in our classic Wok-Tossed Fried Rice, featuring fluffy grains perfectly stir-fried with crisp, fresh
+          vegetables and a hint of savory soy sauce.</p>
+        <div class="card-footer">
+          <span class="price">₹80-120</span>
+          <button class="description-btn" onclick="event.stopPropagation();"><i class='bx bx-info-circle'></i>
+            Description</button>
+        </div>
+      </div>
+
+      <div class="menu-card floating-card" style="animation-delay: 3s; cursor: pointer;"
+        onclick="window.location.href='currys.html'" title="View all Currys">
+        <div class="card-img-wrapper">
+          <img src="assets/butter_chicken_dish.png" alt="Butter Chicken">
+        </div>
+        <h3>Butter Chicken (Currys)</h3>
+        <p>Indulge in our signature Butter Chicken, featuring succulent pieces of tandoori chicken simmered in a
+          velvety, rich, and creamy tomato gravy.</p>
+        <div class="card-footer">
+          <span class="price">₹180-240</span>
+          <button class="description-btn" onclick="event.stopPropagation();"><i class='bx bx-info-circle'></i>
+            Description</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-section" id="about">
+    <div class="about-content">
+      <h2>About Us</h2>
+      <p>
+        Established in 2017, Hyderabadi Dum Biryani brings you the authentic taste of royalty.
+        Our signature biryani is cooked the traditional and authentic way on a wood fire, imparting a rich, smoky aroma.
+        This time-honored technique ensures every grain of basmati rice is perfectly infused with our secret blend of
+        exotic spices.
+        We carefully select the finest ingredients and slow-cook our meals to perfection, giving you an unforgettable
+        culinary experience.
+        Come and enjoy the warmth of our hospitality and the magic of our traditional delicacies that keep our guests
+        coming back for more.
+      </p>
+    </div>
+  </section>
+
+  <section class="reviews-section" id="reviews">
+    <div class="reviews-header">
+      <h2 class="reviews-title">What people <em>say</em> about us?</h2>
+      <p class="reviews-subtitle">From food lovers seeking authentic flavors to families looking for a dine-in
+        experience, we turn simple meals into cherished memories. Here's how they describe the taste.</p>
+    </div>
+
+    <div class="reviews-container">
+      <div class="reviews-row">
+
+        <!-- Review 1 -->
+        <div class="review-card">
+          <div class="review-content">
+            <h3 class="review-heading">"Main highlight in this hotel is Service and finally Quantity."</h3>
+            <p class="review-text">Hey all, we are looking for hydrabad Dum biriyani, near there Railway Station, we got
+              this. This is good to have some hydrabad or Andhra Special dishes. We tried their Tandhoori with chicken
+              gravy. Its was good taste. That roti was big enough. And gravy too. After that we ordered one Chicken
+              biriyani with 1 big piece. We are Satisfied. And we returned to banglore with peace.</p>
+          </div>
+          <div class="review-meta">
+            <p class="review-context">3 years ago • Dine in | Dinner | ₹200–400</p>
+            <div class="review-author">
+              <div class="author-avatar">S</div>
+              <div class="author-info">
+                <h4>Sandeep S</h4>
+                <span>Local Guide · 107 reviews</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="review-card">
+          <div class="review-content">
+            <h3 class="review-heading">"Fine place and reasonable price..."</h3>
+            <p class="review-text">Fine place and reasonable price and good taste traditional Hyderabad food</p>
+          </div>
+          <div class="review-meta">
+            <p class="review-context">5 years ago</p>
+            <div class="review-author">
+              <div class="author-avatar">A</div>
+              <div class="author-info">
+                <h4>Ali Group</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="review-card">
+          <div class="review-content">
+            <h3 class="review-heading">"Taste and quality are perfect"</h3>
+            <p class="review-text">All biryanis in reasonable prices. And taste and quality are perfect</p>
+          </div>
+          <div class="review-meta">
+            <p class="review-context">4 years ago • Dine in | Dinner</p>
+            <div class="review-author">
+              <div class="author-avatar">T</div>
+              <div class="author-info">
+                <h4>TechZite Guru</h4>
+                <span>Local Guide · 48 reviews</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 4 -->
+        <div class="review-card">
+          <div class="review-content">
+            <h3 class="review-heading">"The best Hyderabad dum biryani you get near kachiguda..."</h3>
+            <p class="review-text">The best Hyderabad dum biryani you get near kachiguda railway station with nice place
+              for dining with family. must taste special mutton dum biryani.</p>
+          </div>
+          <div class="review-meta">
+            <p class="review-context">6 years ago</p>
+            <div class="review-author">
+              <div class="author-avatar">N</div>
+              <div class="author-info">
+                <h4>Nazir Shaik</h4>
+                <span>3 reviews</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section brand-section">
+        <div class="footer-logo">
+          <i class='bx bx-restaurant'></i>
+          <h2>Hyderabadi Dum Biryani</h2>
+        </div>
+        <p>Experience the authentic taste of royal delicacies, crafted with passion and served with love.</p>
+        <div class="social-links">
+          <a href="#"><i class='bx bxl-facebook'></i></a>
+          <a href="#"><i class='bx bxl-instagram'></i></a>
+          <a href="#"><i class='bx bxl-twitter'></i></a>
+        </div>
+      </div>
+      <div class="footer-section">
+        <h3>Contact Us</h3>
+        <ul>
+          <li><i class='bx bx-map'></i> 3-2-2,opp police station,kachiguda, Hyderabad </li>
+          <li><i class='bx bx-phone'></i> +91 62818 72993</li>
+          <li><i class='bx bx-envelope'></i> dumbirianihyderabad@gmail.com</li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="menu.html">Our Menu</a></li>
+          <li><a href="index.html#about">About Us</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2017 Hyderabadi Dum Biryani. All rights reserved. by creatify</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
