@@ -68,12 +68,32 @@
     }
     
     @media (max-width: 768px) {
+      .navbar.navbar-fixed {
+        position: relative !important;
+        flex-wrap: nowrap !important;
+        padding: 1rem 5% !important;
+      }
+      
+      .navbar.navbar-fixed .nav-left,
+      .navbar.navbar-fixed .nav-right {
+        flex: none !important;
+        width: auto !important;
+        margin: 0 !important;
+      }
+
+      .navbar.navbar-fixed .nav-center {
+        flex: 1 !important;
+        justify-content: center !important;
+      }
+
       .menu-page-header h1 {
         font-size: 2rem;
       }
+      
       .menu-page-header {
-        padding: 6rem 5% 1rem;
+        padding: 2rem 5% 1rem !important;
       }
+      
       .menu-notice {
         font-size: 0.9rem;
         padding: 0.6rem 1rem;
