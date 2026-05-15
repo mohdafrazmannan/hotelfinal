@@ -68,6 +68,7 @@ h4,
   gap: 0.5rem;
   text-decoration: none;
 }
+
 .location-btn i {
   font-size: 1.1rem;
 }
@@ -417,6 +418,7 @@ h4,
   .nav-left .location-btn span {
     display: none;
   }
+
   .nav-left .location-btn {
     padding: 0;
     width: 45px;
@@ -426,9 +428,11 @@ h4,
     justify-content: center;
     align-items: center;
   }
+
   .nav-left .location-btn i {
     font-size: 1.5rem;
   }
+
   .dish-3 {
     left: 80%;
   }
@@ -439,24 +443,35 @@ h4,
     padding: 1rem 5%;
     flex-wrap: wrap;
   }
-  .nav-left, .nav-center {
+
+  .nav-left {
     flex: 1;
+    justify-content: flex-start;
   }
+
+  .nav-center {
+    flex: 1;
+    justify-content: flex-end;
+  }
+
   .nav-right {
     width: 100%;
     flex: none;
     justify-content: center;
     margin-top: 1rem;
   }
+
   .nav-center h1 {
     font-size: 1.1rem;
     white-space: nowrap;
   }
+
   .brand-logo {
-    width: 35px;
-    height: 35px;
-    font-size: 1rem;
+    width: 45px;
+    height: 45px;
+    font-size: 1.2rem;
   }
+
   .icon-btn {
     display: none;
   }
@@ -464,9 +479,11 @@ h4,
   .hero {
     padding: 2rem 5% 4rem;
   }
+
   .hero-title {
     font-size: 2.2rem;
   }
+
   .hero-buttons {
     flex-direction: column;
     width: 100%;
@@ -474,6 +491,7 @@ h4,
     gap: 1rem;
     margin: 0 auto 3rem auto;
   }
+
   .btn {
     width: 100%;
   }
@@ -483,32 +501,38 @@ h4,
     height: 260px;
     margin-top: 1rem;
   }
+
   .main-dish {
     width: 180px;
     height: 180px;
   }
+
   .floating-dish {
     width: 70px;
     height: 70px;
   }
+
   .dish-1 {
-    top: -15px;
-    left: -5px;
+    top: -20%;
+    left: -20%;
   }
+
   .dish-2 {
-    bottom: -10px;
-    right: 5px;
+    bottom: -20%;
+    right: -20%;
   }
+
   .dish-3 {
-    left: auto;
-    right: -15px;
-    top: 35%;
+    left: 95%;
+    right: auto;
+    top: 40%;
   }
 
   .menu-grid {
     gap: 3.5rem;
     margin-top: 2rem;
   }
+
   .card-img-wrapper {
     width: 130px;
     height: 130px;
@@ -520,34 +544,40 @@ h4,
   .nav-center h1 {
     display: none;
   }
+
   .hero-title {
     font-size: 1.8rem;
   }
-  
+
   .hero-images {
     width: 220px;
     height: 220px;
   }
+
   .main-dish {
     width: 150px;
     height: 150px;
   }
+
   .floating-dish {
     width: 60px;
     height: 60px;
   }
+
   .dish-1 {
-    top: -10px;
-    left: 0px;
+    top: -20%;
+    left: -20%;
   }
+
   .dish-2 {
-    bottom: 0px;
-    right: 10px;
+    bottom: -20%;
+    right: -20%;
   }
+
   .dish-3 {
-    left: auto;
-    right: -10px;
-    top: 35%;
+    left: 95%;
+    right: auto;
+    top: 40%;
   }
 }
 
@@ -600,11 +630,11 @@ h4,
     padding: 3rem 5%;
     margin: 0 1rem 3rem;
   }
-  
+
   .about-content h2 {
     font-size: 2rem;
   }
-  
+
   .about-content p {
     font-size: 1rem;
   }
@@ -675,7 +705,8 @@ h4,
   transform: translateY(-10px);
 }
 
-.gallery-item img, .coming-soon .placeholder {
+.gallery-item img,
+.coming-soon .placeholder {
   width: 100%;
   height: 250px;
   object-fit: cover;
@@ -705,6 +736,7 @@ h4,
   .gallery-section {
     padding: 2rem 5%;
   }
+
   .gallery-content h2 {
     font-size: 2rem;
   }
@@ -874,12 +906,15 @@ h4,
 .reviews-container {
   overflow-x: auto;
   padding: 2rem 1rem 3rem;
-  margin: -2rem -1rem -3rem; /* Compensate for padding to show shadows */
-  scrollbar-width: none; /* Firefox */
+  margin: -2rem -1rem -3rem;
+  /* Compensate for padding to show shadows */
+  scrollbar-width: none;
+  /* Firefox */
 }
 
 .reviews-container::-webkit-scrollbar {
-  display: none; /* Safari and Chrome */
+  display: none;
+  /* Safari and Chrome */
 }
 
 .reviews-row {
@@ -901,7 +936,7 @@ h4,
   transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.4s ease;
   cursor: pointer;
   flex-shrink: 0;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
 }
 
 .review-card::before {
@@ -1011,13 +1046,14 @@ h4,
     text-align: left;
     gap: 1rem;
   }
+
   .reviews-subtitle {
     text-align: left;
   }
+
   .review-card {
     width: 280px;
     height: 420px;
     padding: 2rem 1.5rem;
   }
 }
-
