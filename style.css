@@ -440,26 +440,32 @@ h4,
 
 @media (max-width: 768px) {
   .navbar {
-    padding: 1rem 5%;
-    flex-wrap: wrap;
-    row-gap: 1rem;
+    padding: 0.8rem 3%;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 0.3rem;
+  }
+
+  .nav-left,
+  .nav-center,
+  .nav-right {
+    flex: none;
+    width: auto;
+    margin: 0;
+    justify-content: center;
   }
 
   .nav-left {
-    flex: 1;
-    justify-content: flex-start;
-  }
-
-  .nav-center {
-    flex: 1;
-    justify-content: flex-end;
+    order: 1;
   }
 
   .nav-right {
-    width: 100%;
-    flex: none;
-    justify-content: center;
-    margin-top: 0;
+    order: 2;
+    gap: 0.4rem;
+  }
+
+  .nav-center {
+    order: 3;
   }
 
   .nav-center h1 {
@@ -467,14 +473,24 @@ h4,
   }
 
   .nav-pill-btn {
-    padding: 0.5rem 1rem;
-    font-size: 0.9rem;
+    padding: 0.5rem 0.8rem;
+    font-size: 0.85rem;
+    white-space: nowrap;
   }
 
   .brand-logo {
-    width: 45px;
-    height: 45px;
-    font-size: 1.2rem;
+    width: 40px;
+    height: 40px;
+    font-size: 1.1rem;
+  }
+
+  .nav-left .location-btn {
+    width: 40px;
+    height: 40px;
+  }
+
+  .nav-left .location-btn i {
+    font-size: 1.3rem;
   }
 
   .icon-btn {
