@@ -11,7 +11,29 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (navMenuBtn) navMenuBtn.addEventListener('click', scrollToMenu);
 
-  // Add to cart interaction removed as per request.
+  // Navbar scroll behavior
+  const navbar = document.querySelector('.navbar');
+  let lastScrollY = window.scrollY;
+
+  if (navbar) {
+    window.addEventListener('scroll', () => {
+      const currentScrollY = window.scrollY;
+      
+      if (currentScrollY > 50) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+
+      if (currentScrollY > lastScrollY && currentScrollY > 100) {
+        navbar.classList.add('hidden');
+      } else {
+        navbar.classList.remove('hidden');
+      }
+      
+      lastScrollY = currentScrollY;
+    });
+  }
 
   // Parallax effect on hero images to make it feel alive
   const heroImages = document.querySelector('.hero-images');
