@@ -13,26 +13,25 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Navbar scroll behavior
   const navbar = document.querySelector('.navbar');
-  let lastScrollY = window.scrollY;
+  let ticking = false;
 
   if (navbar) {
     window.addEventListener('scroll', () => {
-      const currentScrollY = window.scrollY;
-      
-      if (currentScrollY > 50) {
-        navbar.classList.add('scrolled');
-      } else {
-        navbar.classList.remove('scrolled');
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          const currentScrollY = Math.max(0, window.scrollY);
+          
+          if (currentScrollY > 80) {
+            navbar.classList.add('hidden');
+          } else {
+            navbar.classList.remove('hidden');
+          }
+          
+          ticking = false;
+        });
+        ticking = true;
       }
-
-      if (currentScrollY > lastScrollY && currentScrollY > 100) {
-        navbar.classList.add('hidden');
-      } else {
-        navbar.classList.remove('hidden');
-      }
-      
-      lastScrollY = currentScrollY;
-    });
+    }, { passive: true });
   }
 
   // Parallax effect on hero images to make it feel alive
