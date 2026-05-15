@@ -88,9 +88,10 @@ h4,
 .nav-center {
   flex: 1;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   gap: 1rem;
+  order: 3;
 }
 
 .brand-logo {
@@ -117,9 +118,10 @@ h4,
 .nav-right {
   flex: 1;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   gap: 1rem;
+  order: 2;
 }
 
 .nav-pill-btn {
