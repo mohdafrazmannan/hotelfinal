@@ -442,6 +442,7 @@ h4,
   .navbar {
     padding: 1rem 5%;
     flex-wrap: wrap;
+    row-gap: 1rem;
   }
 
   .nav-left {
@@ -458,12 +459,16 @@ h4,
     width: 100%;
     flex: none;
     justify-content: center;
-    margin-top: 1rem;
+    margin-top: 0;
   }
 
   .nav-center h1 {
-    font-size: 1.1rem;
-    white-space: nowrap;
+    display: none;
+  }
+
+  .nav-pill-btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
   }
 
   .brand-logo {
@@ -477,7 +482,7 @@ h4,
   }
 
   .hero {
-    padding: 2rem 5% 4rem;
+    padding: 3.5rem 5% 4rem;
   }
 
   .hero-title {
@@ -489,7 +494,7 @@ h4,
     width: 100%;
     max-width: 300px;
     gap: 1rem;
-    margin: 0 auto 3rem auto;
+    margin: 0 auto 2rem auto;
   }
 
   .btn {
@@ -499,7 +504,7 @@ h4,
   .hero-images {
     width: 260px;
     height: 260px;
-    margin-top: 1rem;
+    margin-top: 4rem;
   }
 
   .main-dish {
@@ -552,6 +557,7 @@ h4,
   .hero-images {
     width: 220px;
     height: 220px;
+    margin-top: 3rem;
   }
 
   .main-dish {
@@ -981,6 +987,7 @@ h4,
   line-height: 1.5;
   display: -webkit-box;
   -webkit-line-clamp: 8;
+  /* stylelint-disable-next-line property-no-unknown */
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
