@@ -16,8 +16,26 @@
     }
 
     .menu-page-header h1 {
-      font-size: 3rem;
-      margin-bottom: 1rem;
+      font-size: 3.5rem;
+      margin-bottom: 1.5rem;
+      font-family: var(--font-heading);
+      font-weight: 800;
+      color: var(--heading-color);
+      letter-spacing: 1.5px;
+      position: relative;
+      display: inline-block;
+    }
+
+    .menu-page-header h1::after {
+      content: '';
+      position: absolute;
+      bottom: -12px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80px;
+      height: 4px;
+      background: linear-gradient(90deg, transparent, var(--primary-btn), transparent);
+      border-radius: 2px;
     }
 
     .menu-page-header p {
@@ -69,15 +87,26 @@
       }
 
       .menu-page-header {
-        padding: 2rem 5% 1rem !important;
+        padding: 6.5rem 5% 2rem !important;
       }
       
       .menu-page-header h1 {
-        font-size: 2rem;
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+        margin-bottom: 1.2rem;
+        line-height: 1.3;
+      }
+
+      .menu-page-header h1::after {
+        bottom: -10px;
+        width: 60px;
+        height: 3px;
       }
       
       .menu-page-header p {
         font-size: 0.95rem;
+        line-height: 1.6;
+        padding: 0 10px;
       }
     }
   </style>
@@ -100,7 +129,7 @@
 
   <main>
     <div class="menu-page-header">
-      <h1>Wok-Tossed Fried Rice</h1>
+      <h1>Your Signature Fried Rice</h1>
       <p>Delight in our array of classic fried rice dishes, featuring fluffy grains perfectly stir-fried with crisp
         ingredients.</p>
     </div>
