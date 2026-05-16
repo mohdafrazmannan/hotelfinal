@@ -73,16 +73,20 @@
         padding: 1rem 5% !important;
       }
       
-      .navbar.navbar-fixed .nav-left,
-      .navbar.navbar-fixed .nav-right {
+      .navbar.navbar-fixed .nav-left {
+        display: flex !important;
         flex: none !important;
         width: auto !important;
         margin: 0 !important;
       }
 
+      .navbar.navbar-fixed .nav-right {
+        display: none !important;
+      }
+
       .navbar.navbar-fixed .nav-center {
         flex: 1 !important;
-        justify-content: center !important;
+        justify-content: flex-end !important;
       }
 
       .menu-page-header h1 {
